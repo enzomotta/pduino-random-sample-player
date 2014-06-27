@@ -1,4 +1,4 @@
-#N canvas 327 69 741 608 10;
+#N canvas 563 192 741 608 10;
 #X declare -lib pduino;
 #X obj 233 112 cnv 15 100 22 empty empty empty 20 12 0 14 -253938 -66577
 0;
@@ -930,6 +930,7 @@
 #X msg 239 114;
 #X obj 551 8 import pduino;
 #X obj 429 555 play-random-sample-01;
+#X obj 474 529 play-random-sample-01;
 #X connect 3 0 83 0;
 #X connect 3 1 5 0;
 #X connect 5 0 51 0;
@@ -970,6 +971,7 @@
 #X connect 36 12 47 0;
 #X connect 36 13 48 0;
 #X connect 40 0 88 0;
+#X connect 41 0 89 0;
 #X connect 50 0 52 0;
 #X connect 51 0 82 0;
 #X connect 51 1 58 0;
