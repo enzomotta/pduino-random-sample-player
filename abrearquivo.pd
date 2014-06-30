@@ -1,0 +1,45 @@
+#N canvas 30 95 1257 744 10;
+#X obj 25 18 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 25 38 \; pd dsp \$1;
+#X msg 247 179 start;
+#X msg 63 215 stop;
+#X obj 278 311 readsf~ 2;
+#X obj 414 459 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 293 370 dac~ 1 2;
+#X obj 691 420 s bla;
+#X obj 248 150 r bla;
+#X obj 485 91 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 329 36 r sensor;
+#X msg 385 241 open voz1.wav;
+#X msg 390 281 open trovoada17.wav;
+#X msg 387 201 open pedra1.wav;
+#X msg 395 331 open s2agua15.wav;
+#X obj 513 30 random 4;
+#X obj 445 121 route 0 1 2;
+#X obj 433 15 loadbang;
+#X connect 0 0 1 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 4 1 6 1;
+#X connect 4 2 5 0;
+#X connect 8 0 2 0;
+#X connect 9 0 16 0;
+#X connect 10 0 17 0;
+#X connect 11 0 4 0;
+#X connect 11 0 7 0;
+#X connect 12 0 4 0;
+#X connect 12 0 7 0;
+#X connect 13 0 4 0;
+#X connect 13 0 7 0;
+#X connect 14 0 4 0;
+#X connect 14 0 7 0;
+#X connect 15 0 9 0;
+#X connect 16 0 13 0;
+#X connect 16 1 11 0;
+#X connect 16 2 12 0;
+#X connect 16 3 14 0;
+#X connect 17 0 15 0;
