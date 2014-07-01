@@ -11,8 +11,7 @@
 #X obj 691 420 s bla;
 #X obj 248 150 r bla;
 #X obj 485 91 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144 -1
--1 0;
-#X obj 329 36 r sensor;
+-1 2;
 #X msg 385 241 open voz1.wav;
 #X msg 390 281 open trovoada17.wav;
 #X msg 387 201 open pedra1.wav;
@@ -27,19 +26,18 @@
 #X connect 4 1 6 1;
 #X connect 4 2 5 0;
 #X connect 8 0 2 0;
-#X connect 9 0 16 0;
-#X connect 10 0 17 0;
+#X connect 9 0 15 0;
+#X connect 10 0 4 0;
+#X connect 10 0 7 0;
 #X connect 11 0 4 0;
 #X connect 11 0 7 0;
 #X connect 12 0 4 0;
 #X connect 12 0 7 0;
 #X connect 13 0 4 0;
 #X connect 13 0 7 0;
-#X connect 14 0 4 0;
-#X connect 14 0 7 0;
-#X connect 15 0 9 0;
-#X connect 16 0 13 0;
-#X connect 16 1 11 0;
-#X connect 16 2 12 0;
-#X connect 16 3 14 0;
-#X connect 17 0 15 0;
+#X connect 14 0 9 0;
+#X connect 15 0 12 0;
+#X connect 15 1 10 0;
+#X connect 15 2 11 0;
+#X connect 15 3 13 0;
+#X connect 16 0 14 0;
