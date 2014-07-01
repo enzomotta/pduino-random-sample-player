@@ -20,6 +20,8 @@
 #X obj 75 114 delay 100;
 #X obj 497 106 delay 150;
 #X msg 86 151 \; pd dsp 1;
+#X obj 411 58 r sensor;
+#X obj 425 106 bang;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
@@ -44,3 +46,5 @@
 #X connect 15 0 16 0;
 #X connect 16 0 18 0;
 #X connect 17 0 12 0;
+#X connect 19 0 20 0;
+#X connect 20 0 12 0;
