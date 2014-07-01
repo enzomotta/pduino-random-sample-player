@@ -1,4 +1,4 @@
-#N canvas 30 95 1257 744 10;
+#N canvas 297 97 1257 744 10;
 #X msg 255 270 start;
 #X msg 71 306 stop;
 #X obj 286 402 readsf~ 2;
@@ -8,7 +8,7 @@
 #X obj 699 511 s bla;
 #X obj 256 241 r bla;
 #X obj 493 182 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 1;
 #X msg 393 332 open voz1.wav;
 #X msg 398 372 open trovoada17.wav;
 #X msg 395 292 open pedra1.wav;
@@ -16,7 +16,10 @@
 #X obj 507 144 random 4;
 #X obj 453 212 route 0 1 2;
 #X obj 496 62 loadbang;
-#X obj 497 106 delay 100;
+#X obj 83 78 loadbang;
+#X obj 75 114 delay 100;
+#X obj 497 106 delay 150;
+#X msg 86 151 \; pd dsp 1;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
@@ -37,5 +40,7 @@
 #X connect 13 1 8 0;
 #X connect 13 2 9 0;
 #X connect 13 3 11 0;
-#X connect 14 0 15 0;
-#X connect 15 0 12 0;
+#X connect 14 0 17 0;
+#X connect 15 0 16 0;
+#X connect 16 0 18 0;
+#X connect 17 0 12 0;
