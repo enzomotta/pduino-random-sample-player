@@ -929,8 +929,8 @@
 #X msg 239 114;
 #X obj 648 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 406 621 s sensor;
-#X obj 347 579 spigot;
+#X obj 488 615 s sensor;
+#X obj 493 577 spigot;
 #X connect 3 0 83 0;
 #X connect 3 1 5 0;
 #X connect 5 0 51 0;
@@ -970,8 +970,22 @@
 #X connect 36 11 46 0;
 #X connect 36 12 47 0;
 #X connect 36 13 48 0;
+#X connect 37 0 89 0;
+#X connect 37 0 89 1;
+#X connect 38 0 89 0;
+#X connect 38 0 89 1;
+#X connect 39 0 89 0;
+#X connect 39 0 89 1;
+#X connect 40 0 89 0;
+#X connect 40 0 89 1;
 #X connect 41 0 89 1;
 #X connect 41 0 89 0;
+#X connect 42 0 89 0;
+#X connect 42 0 89 1;
+#X connect 43 0 89 0;
+#X connect 43 0 89 1;
+#X connect 44 0 89 0;
+#X connect 44 0 89 1;
 #X connect 50 0 52 0;
 #X connect 51 0 82 0;
 #X connect 51 1 58 0;
@@ -981,6 +995,8 @@
 #X connect 58 0 50 0;
 #X connect 61 0 86 0;
 #X connect 67 0 85 0;
+#X connect 69 0 89 0;
+#X connect 69 0 89 1;
 #X connect 70 0 51 0;
 #X connect 82 0 34 0;
 #X connect 82 1 36 0;
