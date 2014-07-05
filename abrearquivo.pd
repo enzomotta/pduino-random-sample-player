@@ -76,6 +76,8 @@
 #X obj 25 46 delay 100;
 #X obj 23 12 loadbang;
 #X msg 28 84 \; pd dsp 1;
+#X obj 572 2 loadbang;
+#X obj 487 25 delay 150;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
@@ -154,3 +156,5 @@
 #X connect 61 0 38 0;
 #X connect 62 0 64 0;
 #X connect 63 0 62 0;
+#X connect 65 0 66 0;
+#X connect 66 0 7 0;
