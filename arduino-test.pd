@@ -1,4 +1,4 @@
-#N canvas 491 22 744 683 10;
+#N canvas 385 78 785 604 10;
 #X obj 233 112 cnv 15 100 22 empty empty empty 20 12 0 14 -253938 -66577
 0;
 #X obj 405 216 cnv 15 85 22 empty empty empty 20 12 0 14 -253938 -66577
@@ -6,11 +6,11 @@
 #X obj 22 90 cnv 15 60 22 empty empty empty 20 12 0 14 -253938 -66577
 0;
 #N canvas 146 163 525 433 serin 0;
-#X obj 180 61 cnv 15 15 15 empty \$0-number-canvas 2 4 8 0 14 -233017
+#X obj 180 61 cnv 15 15 15 empty \$0-number-canvas 0 4 8 0 14 -233017
 -1 0;
 #X obj 200 225 s \$0-number-canvas;
 #X obj 60 61 hradio 15 1 1 8 empty empty empty 0 -6 0 8 -225271 -1
--1 2;
+-1 0;
 #X obj 60 13 inlet;
 #X msg 200 202 label \$1;
 #X obj 200 180 makefilename %d;
@@ -81,11 +81,11 @@
 #X text 430 123 1;
 #X msg 121 132 info;
 #X msg 121 152 version;
-#N canvas 763 71 475 478 sending 0;
+#N canvas 546 80 475 478 sending 0;
 #X obj 69 228 cnv 15 100 22 empty empty empty 20 12 0 14 -253938 -66577
 0;
 #X obj 78 434 outlet;
-#X msg 78 231 digital 9 1;
+#X msg 78 231 digital 0 0;
 #X obj 127 148 tgl 15 0 empty ARDUINO_TEST_RESET 7 4 -6 1 12 -233017
 -1 -1 0 1;
 #X obj 144 148 tgl 15 0 empty ARDUINO_TEST_RESET 8 4 -6 1 12 -233017
@@ -340,7 +340,7 @@
 #X floatatom 298 446 5 0 0 3 a6 - -;
 #X floatatom 344 446 5 0 0 3 a7 - -;
 #X obj 121 389 route 0 1 2 3 4 5 6 7;
-#N canvas 981 48 499 396 display 0;
+#N canvas 981 50 499 396 display 0;
 #X obj 6 7 inlet;
 #X obj 6 28 mapping/resample 100;
 #X obj 6 50 outlet;
@@ -417,7 +417,7 @@
 #X obj 615 475 tgl 15 0 empty ARDUINO_TEST_RESET 13 0 23 1 12 -232448
 -1 -1 0 1;
 #X text 2 504 (C) Copyright 2006 Free Software Foundation;
-#N canvas 3 48 451 224 ver 0;
+#N canvas 3 50 451 224 ver 0;
 #X obj 23 7 inlet;
 #X obj 250 100 cnv 15 145 17 empty \$0-version_cnv empty 4 10 0 12
 -203904 -1 0;
@@ -473,14 +473,14 @@
 #X restore 397 357 pd firmware;
 #X msg 121 192 devices;
 #X msg 121 172 firmware;
-#N canvas 0 22 450 300 STRING 0;
+#N canvas 0 50 450 300 STRING 0;
 #X obj 48 13 inlet;
 #X obj 51 93 moocow/string2any 32 -1;
 #X obj 51 154 print STRING;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X restore 396 409 pd STRING;
-#N canvas 205 22 593 390 strings 0;
+#N canvas 205 50 593 390 strings 0;
 #X obj -178 287 outlet;
 #X obj -142 101 moocow/any2string;
 #X symbolatom -92 48 10 0 0 0 - - -;
@@ -520,7 +520,7 @@
 #X connect 17 0 16 0;
 #X connect 17 0 18 0;
 #X restore 183 245 pd strings and special messages;
-#X text 397 503 released under the GNU GPL v2 or later;
+#X text 429 501 released under the GNU GPL v2 or later;
 #N canvas 626 98 404 287 device 0;
 #X obj 35 60 inlet;
 #X obj 35 118 route open port ports;
@@ -539,7 +539,7 @@
 #X connect 6 0 7 0;
 #X connect 7 0 5 0;
 #X restore 397 315 pd device info;
-#N canvas 0 22 450 300 sysex 0;
+#N canvas 0 50 450 300 sysex 0;
 #X obj 139 19 inlet;
 #X obj 127 109 moocow/string2any 32 -1;
 #X obj 127 170 print STRING;
@@ -819,7 +819,7 @@
 -1 -1 0 1;
 #X obj 411 475 tgl 15 0 empty ARDUINO_TEST_RESET 1 4 23 1 12 -232448
 -1 -1 0 1;
-#N canvas 0 22 450 300 old 0;
+#N canvas 0 50 450 300 old 0;
 #X msg 95 138 digitalIns 0 0;
 #X msg 88 77 analogIns 0 0;
 #N canvas 162 133 610 460 serin 0;
@@ -923,14 +923,18 @@
 #X text 9 389 analog inputs:;
 #X text 486 46 NONE;
 #X obj 121 324 route analog digital string sysex;
-#X msg 28 92 open 2;
+#X msg 28 92 open 0;
 #X text 418 155 switch pin to 'pwm' or 'servo' first;
 #X msg 413 218;
 #X msg 239 114;
-#X obj 648 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 406 621 s sensor;
-#X obj 347 579 spigot;
+#X obj 351 553 s sensor1;
+#X obj 437 555 s sensor2;
+#X obj 523 552 s sensor3;
+#X obj 612 553 s sensor4;
+#X obj 613 522 spigot;
+#X obj 520 521 spigot;
+#X obj 441 519 spigot;
+#X obj 359 519 spigot;
 #X connect 3 0 83 0;
 #X connect 3 1 5 0;
 #X connect 5 0 51 0;
@@ -970,8 +974,14 @@
 #X connect 36 11 46 0;
 #X connect 36 12 47 0;
 #X connect 36 13 48 0;
-#X connect 41 0 89 1;
-#X connect 41 0 89 0;
+#X connect 38 0 94 1;
+#X connect 38 0 94 0;
+#X connect 39 0 93 1;
+#X connect 39 0 93 0;
+#X connect 40 0 92 1;
+#X connect 40 0 92 0;
+#X connect 41 0 91 1;
+#X connect 41 0 91 0;
 #X connect 50 0 52 0;
 #X connect 51 0 82 0;
 #X connect 51 1 58 0;
@@ -989,4 +999,7 @@
 #X connect 83 0 51 0;
 #X connect 85 0 51 0;
 #X connect 86 0 51 0;
-#X connect 89 0 88 0;
+#X connect 91 0 90 0;
+#X connect 92 0 89 0;
+#X connect 93 0 88 0;
+#X connect 94 0 87 0;
