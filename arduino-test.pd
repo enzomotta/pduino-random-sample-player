@@ -928,6 +928,7 @@
 #X msg 413 218;
 #X msg 239 114;
 #X obj 351 553 s sensor1;
+<<<<<<< HEAD
 #X obj 437 555 s sensor2;
 #X obj 523 552 s sensor3;
 #X obj 612 553 s sensor4;
@@ -935,6 +936,17 @@
 #X obj 520 521 spigot;
 #X obj 441 519 spigot;
 #X obj 359 519 spigot;
+=======
+#X obj 417 551 s sensor2;
+#X obj 484 551 s sensor3;
+#X obj 547 553 s sensor4;
+#X obj 553 526 spigot;
+#X obj 498 522 spigot;
+#X obj 424 518 spigot;
+#X obj 347 519 spigot;
+#X obj 228 552 print 'porta 3';
+#X obj 640 555 print 'porta 6';
+>>>>>>> b959c450d48d6e4d73851b7bcade4a1bb0362ac8
 #X connect 3 0 83 0;
 #X connect 3 1 5 0;
 #X connect 5 0 51 0;
@@ -974,6 +986,7 @@
 #X connect 36 11 46 0;
 #X connect 36 12 47 0;
 #X connect 36 13 48 0;
+<<<<<<< HEAD
 #X connect 38 0 94 1;
 #X connect 38 0 94 0;
 #X connect 39 0 93 1;
@@ -982,6 +995,16 @@
 #X connect 40 0 92 0;
 #X connect 41 0 91 1;
 #X connect 41 0 91 0;
+=======
+#X connect 38 0 94 0;
+#X connect 38 0 94 1;
+#X connect 39 0 93 0;
+#X connect 39 0 93 1;
+#X connect 40 0 92 0;
+#X connect 40 0 92 1;
+#X connect 41 0 91 0;
+#X connect 41 0 91 1;
+>>>>>>> b959c450d48d6e4d73851b7bcade4a1bb0362ac8
 #X connect 50 0 52 0;
 #X connect 51 0 82 0;
 #X connect 51 1 58 0;
@@ -1000,6 +1023,14 @@
 #X connect 85 0 51 0;
 #X connect 86 0 51 0;
 #X connect 91 0 90 0;
+<<<<<<< HEAD
 #X connect 92 0 89 0;
 #X connect 93 0 88 0;
 #X connect 94 0 87 0;
+=======
+#X connect 91 0 96 0;
+#X connect 92 0 89 0;
+#X connect 93 0 88 0;
+#X connect 94 0 87 0;
+#X connect 94 0 95 0;
+>>>>>>> b959c450d48d6e4d73851b7bcade4a1bb0362ac8
