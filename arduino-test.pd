@@ -520,6 +520,7 @@
 #X connect 17 0 16 0;
 #X connect 17 0 18 0;
 #X restore 183 245 pd strings and special messages;
+#X text 429 501 released under the GNU GPL v2 or later;
 #N canvas 626 98 404 287 device 0;
 #X obj 35 60 inlet;
 #X obj 35 118 route open port ports;
@@ -926,7 +927,6 @@
 #X text 418 155 switch pin to 'pwm' or 'servo' first;
 #X msg 413 218;
 #X msg 239 114;
-<<<<<<< HEAD
 #X obj 351 553 s sensor1;
 #X obj 417 551 s sensor2;
 #X obj 484 551 s sensor3;
@@ -939,20 +939,10 @@
 #X obj 5 169 loadbang;
 #X obj 9 208 delay 10000;
 #X connect 3 0 83 0;
-=======
-#X obj 347 561 s sensor1;
-#X obj 536 559 s sensor3;
-#X obj 625 560 s sensor4;
-#X obj 436 560 s sensor2;
-#X obj 359 521 spigot;
-#X obj 440 519 spigot;
-#X obj 525 520 spigot;
-#X obj 608 521 spigot;
->>>>>>> 29e047f4a2d1cdbba164bc1c6e9342cc01cacef6
 #X connect 3 1 5 0;
 #X connect 5 0 51 0;
-#X connect 6 0 66 1;
-#X connect 13 0 66 0;
+#X connect 6 0 67 1;
+#X connect 13 0 67 0;
 #X connect 28 0 51 0;
 #X connect 29 0 51 0;
 #X connect 30 0 51 0;
@@ -973,8 +963,8 @@
 #X connect 35 5 12 0;
 #X connect 35 6 32 0;
 #X connect 35 7 33 0;
-#X connect 36 0 67 0;
-#X connect 36 1 68 0;
+#X connect 36 0 68 0;
+#X connect 36 1 69 0;
 #X connect 36 2 37 0;
 #X connect 36 3 38 0;
 #X connect 36 4 39 0;
@@ -987,7 +977,6 @@
 #X connect 36 11 46 0;
 #X connect 36 12 47 0;
 #X connect 36 13 48 0;
-<<<<<<< HEAD
 #X connect 38 0 94 1;
 #X connect 38 0 94 0;
 #X connect 39 0 93 1;
@@ -999,33 +988,19 @@
 #X connect 50 0 52 0;
 #X connect 51 0 82 0;
 #X connect 51 1 58 0;
-=======
-#X connect 38 0 90 1;
-#X connect 38 0 90 0;
-#X connect 39 0 91 1;
-#X connect 39 0 91 0;
-#X connect 40 0 92 1;
-#X connect 40 0 92 0;
-#X connect 41 0 93 1;
-#X connect 41 0 93 0;
-#X connect 51 0 81 0;
-#X connect 51 1 57 0;
->>>>>>> 29e047f4a2d1cdbba164bc1c6e9342cc01cacef6
 #X connect 53 0 51 0;
 #X connect 54 0 51 0;
 #X connect 56 0 51 0;
-#X connect 57 0 50 0;
-#X connect 60 0 85 0;
-#X connect 66 0 84 0;
-#X connect 69 0 51 0;
-#X connect 81 0 34 0;
-#X connect 81 1 36 0;
-#X connect 81 2 55 0;
-#X connect 81 3 58 0;
-#X connect 82 0 51 0;
-#X connect 84 0 51 0;
+#X connect 58 0 50 0;
+#X connect 61 0 86 0;
+#X connect 67 0 85 0;
+#X connect 70 0 51 0;
+#X connect 82 0 34 0;
+#X connect 82 1 36 0;
+#X connect 82 2 55 0;
+#X connect 82 3 59 0;
+#X connect 83 0 51 0;
 #X connect 85 0 51 0;
-<<<<<<< HEAD
 #X connect 86 0 51 0;
 #X connect 91 0 90 0;
 #X connect 91 0 95 0;
@@ -1040,9 +1015,3 @@
 #X connect 97 0 54 0;
 #X connect 97 0 29 0;
 #X connect 97 0 28 0;
-=======
-#X connect 90 0 86 0;
-#X connect 91 0 89 0;
-#X connect 92 0 87 0;
-#X connect 93 0 88 0;
->>>>>>> 29e047f4a2d1cdbba164bc1c6e9342cc01cacef6
