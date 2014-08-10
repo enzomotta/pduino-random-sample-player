@@ -6,11 +6,11 @@
 #X obj 22 90 cnv 15 60 22 empty empty empty 20 12 0 14 -253938 -66577
 0;
 #N canvas 146 163 525 433 serin 0;
-#X obj 180 61 cnv 15 15 15 empty \$0-number-canvas 0 4 8 0 14 -233017
+#X obj 180 61 cnv 15 15 15 empty \$0-number-canvas 1 4 8 0 14 -233017
 -1 0;
 #X obj 200 225 s \$0-number-canvas;
 #X obj 60 61 hradio 15 1 1 8 empty empty empty 0 -6 0 8 -225271 -1
--1 0;
+-1 1;
 #X obj 60 13 inlet;
 #X msg 200 202 label \$1;
 #X obj 200 180 makefilename %d;
@@ -923,19 +923,16 @@
 #X text 9 389 analog inputs:;
 #X text 486 46 NONE;
 #X obj 121 324 route analog digital string sysex;
-#X msg 28 92 open 0;
+#X msg 28 92 open 1;
 #X text 418 155 switch pin to 'pwm' or 'servo' first;
 #X msg 413 218;
 #X msg 239 114;
-#X obj 351 553 s sensor1;
-#X obj 417 551 s sensor2;
-#X obj 484 551 s sensor3;
-#X obj 547 553 s sensor4;
-#X obj 553 526 spigot;
-#X obj 498 522 spigot;
-#X obj 424 518 spigot;
-#X obj 347 519 spigot;
-#X obj 274 569 print \$1;
+#X obj 339 562 s sensor1;
+#X obj 465 561 s sensor2;
+#X obj 580 561 s sensor3;
+#X obj 590 531 spigot;
+#X obj 471 528 spigot;
+#X obj 343 528 spigot;
 #X obj 5 169 loadbang;
 #X obj 9 208 delay 10000;
 #X connect 3 0 83 0;
@@ -977,14 +974,12 @@
 #X connect 36 11 46 0;
 #X connect 36 12 47 0;
 #X connect 36 13 48 0;
-#X connect 38 0 94 1;
-#X connect 38 0 94 0;
-#X connect 39 0 93 1;
-#X connect 39 0 93 0;
-#X connect 40 0 92 1;
-#X connect 40 0 92 0;
-#X connect 41 0 91 1;
-#X connect 41 0 91 0;
+#X connect 38 0 92 1;
+#X connect 38 0 92 0;
+#X connect 39 0 91 1;
+#X connect 39 0 91 0;
+#X connect 40 0 90 1;
+#X connect 40 0 90 0;
 #X connect 50 0 52 0;
 #X connect 51 0 82 0;
 #X connect 51 1 58 0;
@@ -1002,16 +997,11 @@
 #X connect 83 0 51 0;
 #X connect 85 0 51 0;
 #X connect 86 0 51 0;
-#X connect 91 0 90 0;
-#X connect 91 0 95 0;
-#X connect 92 0 89 0;
-#X connect 92 0 95 0;
-#X connect 93 0 88 0;
-#X connect 93 0 95 0;
-#X connect 94 0 87 0;
-#X connect 94 0 95 0;
-#X connect 96 0 97 0;
-#X connect 97 0 53 0;
-#X connect 97 0 54 0;
-#X connect 97 0 29 0;
-#X connect 97 0 28 0;
+#X connect 90 0 89 0;
+#X connect 91 0 88 0;
+#X connect 92 0 87 0;
+#X connect 93 0 94 0;
+#X connect 94 0 53 0;
+#X connect 94 0 54 0;
+#X connect 94 0 29 0;
+#X connect 94 0 28 0;
